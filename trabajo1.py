@@ -3,6 +3,21 @@
 
 import math
 
+ap = 75
+
+def areacuadrado(L):
+        return L * L
+                    
+def areatriangulo(L):
+    h =  3**2 * L / 2
+    return L * h / 2
+        
+def areapentagono(L):
+    return nL / 2 (math.tan( ap ))
+
+def perimetro(L,nL):
+    return L * nL
+
 
 while True:
     nL = int(input("Ingresa el numero de lados de la figura(3,4,5): "))
@@ -30,22 +45,3 @@ while True:
         
     else:
         print("Error")
-        
-    ap = 75
-    
-    def areacuadrado(L):
-        return L * L
-        
-            
-    def areatriangulo(L):
-        h =  3**2 * L / 2
-        return L * h / 2
-        
-        
-    def areapentagono(L):
-        return nL / 2 (math.tan( ap ))
-        
-
-    def perimetro(L,nL):
-        return L * nL
-        
