@@ -3,8 +3,6 @@
 
 import math
 
-ap = 75
-
 def areacuadrado(L):
         return L * L
                     
@@ -13,7 +11,8 @@ def areatriangulo(L):
     return L * h / 2
         
 def areapentagono(L):
-    return nL / 2 (math.tan( ap ))
+    ap = 35
+    return nL / 2 (math.tan(ap))
 
 def perimetro(L,nL):
     return L * nL
@@ -38,6 +37,7 @@ while True:
 
     elif nL == 5:
         L = int(input("Ingresa la medida de los lados de cada figura: "))
+        
         perimetro(L,nL)
         print(f"Perimetro: {perimetro(L,nL)}")
         areapentagono(L)
