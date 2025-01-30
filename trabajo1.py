@@ -3,22 +3,35 @@
 
 import math
 
-nL = input("Ingresa el numero de lados de la figura(3,4,5): ")
-L = input("Ingresa la medida de los lados de cada figura: ")
-ap = 75
+
+while True:
+    nL = input("Ingresa el numero de lados de la figura(3,4,5): ")
+    L = input("Ingresa la medida de los lados de cada figura: ")
+    if nL == "3":
+        
+    elif nL == "4":
+        pass
+    elif nL == "5":
+        pass
+    else:
+        print("Error")
+        
 
 class figura:
+    ap = 75
     def areacuadrado(L):
         return L * L
-    
+        print()
+        
     def arearectangulo(L):
-        h = pow(L, 1/3) / 2
+        h =  3**2 * L / 2
         return L * h / 2
-    
-    def areapentagono(L, ap):
-        return nL / 2
+        print()
+        
+    def areapentagono(L):
+        return nL / 2 (math.tan( ap ))
+        print()
 
-    
     def perimetro(L,nL):
         return L * nL
-    
+        
