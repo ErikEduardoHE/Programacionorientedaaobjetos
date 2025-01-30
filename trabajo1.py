@@ -10,17 +10,23 @@ while True:
     if nL == 3:
        L = int(input("Ingresa la medida de los lados de cada figura: "))
        perimetro(L,nL)
-       arearectangulo(L)
+       print(f"Perimetro: {perimetro(L,nL)}")
+       areatriangulo(L)
+       print(f"Area: {areatriangulo(L)}")
 
     elif nL == 4:
         L = int(input("Ingresa la medida de los lados de cada figura: "))
         perimetro(L,nL)
+        print(f"Perimetro: {perimetro(L,nL)}")
         areacuadrado(L)
+        print(f"Area: {areacuadrado(L)}")
 
     elif nL == 5:
         L = int(input("Ingresa la medida de los lados de cada figura: "))
         perimetro(L,nL)
+        print(f"Perimetro: {perimetro(L,nL)}")
         areapentagono(L)
+        print(f"Area: {areapentagono(L)}")
         
     else:
         print("Error")
@@ -29,17 +35,17 @@ while True:
     
     def areacuadrado(L):
         return L * L
-        print(areacuadrado(L))
+        
             
-    def arearectangulo(L):
+    def areatriangulo(L):
         h =  3**2 * L / 2
         return L * h / 2
-        print(arearectangulo(L))
+        
         
     def areapentagono(L):
         return nL / 2 (math.tan( ap ))
-        print(areapentagono(L))
+        
 
     def perimetro(L,nL):
         return L * nL
-        print(perimetro(L,nL))
+        
