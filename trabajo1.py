@@ -9,11 +9,16 @@ while True:
     L = input("Ingresa la medida de los lados de cada figura: ")
     if nL == "3":
        perimetro(L,nL)
-       areacuadrado
+       arearectangulo(L)
+
     elif nL == "4":
-        pass
+        perimetro(L,nL)
+        areacuadrado(L)
+
     elif nL == "5":
-        pass
+        perimetro(L,nL)
+        areapentagono(L)
+        
     else:
         print("Error")
         
