@@ -22,9 +22,8 @@ while True:
     else:
         print("Error")
         
-
-class figura:
     ap = 75
+    
     def areacuadrado(L):
         return L * L
             
