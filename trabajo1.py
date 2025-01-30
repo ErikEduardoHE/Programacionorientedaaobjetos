@@ -6,16 +6,19 @@ import math
 
 while True:
     nL = input("Ingresa el numero de lados de la figura(3,4,5): ")
-    L = input("Ingresa la medida de los lados de cada figura: ")
+    
     if nL == "3":
+       L = input("Ingresa la medida de los lados de cada figura: ")
        perimetro(L,nL)
        arearectangulo(L)
 
     elif nL == "4":
+        L = input("Ingresa la medida de los lados de cada figura: ")
         perimetro(L,nL)
         areacuadrado(L)
 
     elif nL == "5":
+        L = input("Ingresa la medida de los lados de cada figura: ")
         perimetro(L,nL)
         areapentagono(L)
         
