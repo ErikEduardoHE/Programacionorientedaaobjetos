@@ -6,11 +6,11 @@ def areacuadrado(L):
         return L * L
                     
 def areatriangulo(L):
-    h =  3**2 * L / 2
-    return L * h / 2
+    altura = (math.sqrt(3) / 2) * L
+    return (L * altura) / 2
         
 def areapentagono(L):
-    return nL / 2 (math.tan(35))
+    (nL / 2) * math.tan(math.radians(35)) * L**2
 
 def perimetro(L,nL):
     return L * nL
