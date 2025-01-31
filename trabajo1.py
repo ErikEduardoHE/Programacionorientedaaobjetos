@@ -11,8 +11,7 @@ def areatriangulo(L):
     return L * h / 2
         
 def areapentagono(L):
-    ap = 35
-    return nL / 2 (math.tan(ap))
+    return nL / 2 (math.tan(35))
 
 def perimetro(L,nL):
     return L * nL
