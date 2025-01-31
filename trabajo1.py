@@ -1,5 +1,4 @@
-#Calcular el area de diferentes formas con diferente numero de lados
-#Area y perimetro
+#Calcular el area y perimetro de diferentes formas con diferente numero de lados
 
 import math
 
