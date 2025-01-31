@@ -20,7 +20,11 @@ def perimetro(L,nL):
 while True:
     nL = int(input("Ingresa el numero de lados de la figura(3,4,5): "))
     
-    if nL == 3:
+    if nL == 1:
+        print("No puedo calcular esa figura aun")
+    elif nL == 2:
+        print("Figura no existente")
+    elif  nL == 3:
        L = int(input("Ingresa la medida de los lados de cada figura: "))
        perimetro(L,nL)
        print("-------------------------")
@@ -56,5 +60,5 @@ while True:
         
     else:
         print("-------------------------")
-        print("Error")
+        print("Aun no puedo calcular esa figura")
         print("-------------------------")
