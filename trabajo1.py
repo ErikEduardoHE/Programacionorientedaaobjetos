@@ -8,8 +8,8 @@ def areatriangulo(L):
     return (L * altura) / 2
         
 def areapentagono(L):
-    angulo_radianes = 54 * (math.pi / 180)
-    return L**2 * (L * math.tan(angulo_radianes) / 4)
+    angulo_radianes = (math.pi / 5)
+    return 5 * L**2 / 4 * math.tan(angulo_radianes)
 
 def perimetro(L, nL):
     return L * nL
@@ -41,7 +41,7 @@ while True:
         print(f"Area: {area:.2f}")
         print("-------------------------")
 
-    elif nL == 5:
+    elif nL >= 5:
         L = float(input("Ingresa la medida de los lados de cada figura: "))
         perim = perimetro(L, nL)
         print("-------------------------")
