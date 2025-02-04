@@ -8,8 +8,8 @@ def areatriangulo(L):
     return (L * altura) / 2
         
 def areapentagono(L):
-    apotema =  L * (math.cos(math.radians(36))) / (math.sin(math.radians(72)))
-    return perimetro(L, 5) * apotema / 2
+    return L^2 *( L * (math.tan(54 π)) / 4)
+    
 
 def perimetro(L, nL):
     return L * nL
