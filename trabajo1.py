@@ -9,8 +9,7 @@ def triangulo(L):
         
 def figurasregulares(L):
     angulo_radianes = (math.pi / nL)
-    return nL * L**2 / 4 * math.tan(angulo_radianes)
-
+    return L / (2 * math.tan(math.pi / nL))
 def perimetro(L, nL):
     return L * nL
 
@@ -19,6 +18,7 @@ while True:
     
     if nL == 1:
         print("No puedo calcular esa figura aun")
+   
     elif nL == 2:
         print("Figura no existente")
    
