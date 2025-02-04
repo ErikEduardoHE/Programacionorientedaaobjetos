@@ -9,7 +9,8 @@ def triangulo(L):
         
 def figurasregulares(L):
     angulo_radianes = (math.pi / nL)
-    return L / (2 * math.tan(math.pi / nL))
+    return nL * L**2 / 4 * math.tan(angulo_radianes)
+
 def perimetro(L, nL):
     return L * nL
 
