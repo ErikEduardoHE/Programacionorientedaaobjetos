@@ -1,20 +1,18 @@
-#Calcular el area y perimetro de diferentes formas con diferente numero de lados
-
 import math
 
 def areacuadrado(L):
-        return L * L
+    return L * L
                     
 def areatriangulo(L):
     altura = (math.sqrt(3) / 2) * L
     return (L * altura) / 2
         
 def areapentagono(L):
-    return (nL / 2) * math.tan(math.radians(35)) * L**2
+    apotema =  L * (math.cos(math.radians(36))) / (math.sin(math.radians(72)))
+    return perimetro(L, 5) * apotema / 2
 
-def perimetro(L,nL):
+def perimetro(L, nL):
     return L * nL
-
 
 while True:
     nL = int(input("Ingresa el numero de lados de la figura: "))
@@ -24,37 +22,33 @@ while True:
     elif nL == 2:
         print("Figura no existente")
     elif  nL == 3:
-       L = int(input("Ingresa la medida de los lados de cada figura: "))
-       perimetro(L,nL)
-       print("-------------------------")
-       print(f"Perimetro: {perimetro(L,nL)}")
-       print("-------------------------")
-       areatriangulo(L)
-       print("-------------------------")
-       print(f"Area: {areatriangulo(L):.2f}")
-       print("-------------------------")
+        L = float(input("Ingresa la medida de los lados de cada figura: "))
+        perim = perimetro(L, nL)
+        print("-------------------------")
+        print(f"Perimetro: {perim}")
+        print("-------------------------")
+        area = areatriangulo(L)
+        print(f"Area: {area:.2f}")
+        print("-------------------------")
 
     elif nL == 4:
-        L = int(input("Ingresa la medida de los lados de cada figura: "))
-        perimetro(L,nL)
+        L = float(input("Ingresa la medida de los lados de cada figura: "))
+        perim = perimetro(L, nL)
         print("-------------------------")
-        print(f"Perimetro: {perimetro(L,nL)}")
+        print(f"Perimetro: {perim}")
         print("-------------------------")
-        areacuadrado(L)
-        print("-------------------------")
-        print(f"Area: {areacuadrado(L):.2f}")
+        area = areacuadrado(L)
+        print(f"Area: {area:.2f}")
         print("-------------------------")
 
     elif nL == 5:
-        L = int(input("Ingresa la medida de los lados de cada figura: "))
-        
-        perimetro(L,nL)
+        L = float(input("Ingresa la medida de los lados de cada figura: "))
+        perim = perimetro(L, nL)
         print("-------------------------")
-        print(f"Perimetro: {perimetro(L,nL)}")
+        print(f"Perimetro: {perim}")
         print("-------------------------")
-        areapentagono(L)
-        print("-------------------------")
-        print(f"Area: {areapentagono(L):.2f}")
+        area = areapentagono(L)
+        print(f"Area: {area:.2f}")
         print("-------------------------")
         
     else:
