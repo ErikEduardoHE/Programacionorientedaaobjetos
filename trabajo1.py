@@ -31,7 +31,7 @@ while True:
        print("-------------------------")
        areatriangulo(L)
        print("-------------------------")
-       print(f"Area: {areatriangulo(L)}")
+       print(f"Area: {areatriangulo(L):.2f}")
        print("-------------------------")
 
     elif nL == 4:
@@ -42,7 +42,7 @@ while True:
         print("-------------------------")
         areacuadrado(L)
         print("-------------------------")
-        print(f"Area: {areacuadrado(L)}")
+        print(f"Area: {areacuadrado(L):.2f}")
         print("-------------------------")
 
     elif nL == 5:
@@ -54,7 +54,7 @@ while True:
         print("-------------------------")
         areapentagono(L)
         print("-------------------------")
-        print(f"Area: {areapentagono(L)}")
+        print(f"Area: {areapentagono(L):.2f}")
         print("-------------------------")
         
     else:
