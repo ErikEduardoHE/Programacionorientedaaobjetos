@@ -21,27 +21,8 @@ while True:
         print("No puedo calcular esa figura aun")
     elif nL == 2:
         print("Figura no existente")
-    elif  nL == 3:
-        L = float(input("Ingresa la medida de los lados de cada figura: "))
-        perim = perimetro(L, nL)
-        print("-------------------------")
-        print(f"Perimetro: {perim}")
-        print("-------------------------")
-        area = triangulo(L)
-        print(f"Area: {area:.2f}")
-        print("-------------------------")
-
-    elif nL == 4:
-        L = float(input("Ingresa la medida de los lados de cada figura: "))
-        perim = perimetro(L, nL)
-        print("-------------------------")
-        print(f"Perimetro: {perim}")
-        print("-------------------------")
-        area = cuadrado(L)
-        print(f"Area: {area:.2f}")
-        print("-------------------------")
-
-    elif nL > 4:
+   
+    elif nL >= 3:
         L = float(input("Ingresa la medida de los lados de cada figura: "))
         perim = perimetro(L, nL)
         print("-------------------------")
