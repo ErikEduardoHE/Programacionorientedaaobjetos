@@ -1,15 +1,15 @@
 import math
 
-def areacuadrado(L):
+def cuadrado(L):
     return L * L
                     
-def areatriangulo(L):
+def triangulo(L):
     altura = (math.sqrt(3) / 2) * L
     return (L * altura) / 2
         
-def areapentagono(L):
-    angulo_radianes = (math.pi / 5)
-    return 5 * L**2 / 4 * math.tan(angulo_radianes)
+def figurasregulares(L):
+    angulo_radianes = (math.pi / nL)
+    return nL * L**2 / 4 * math.tan(angulo_radianes)
 
 def perimetro(L, nL):
     return L * nL
@@ -27,7 +27,7 @@ while True:
         print("-------------------------")
         print(f"Perimetro: {perim}")
         print("-------------------------")
-        area = areatriangulo(L)
+        area = triangulo(L)
         print(f"Area: {area:.2f}")
         print("-------------------------")
 
@@ -37,7 +37,7 @@ while True:
         print("-------------------------")
         print(f"Perimetro: {perim}")
         print("-------------------------")
-        area = areacuadrado(L)
+        area = cuadrado(L)
         print(f"Area: {area:.2f}")
         print("-------------------------")
 
@@ -47,7 +47,7 @@ while True:
         print("-------------------------")
         print(f"Perimetro: {perim}")
         print("-------------------------")
-        area = areapentagono(L)
+        area = figurasregulares(L)
         print(f"Area: {area:.2f}")
         print("-------------------------")
         
