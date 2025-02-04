@@ -41,7 +41,7 @@ while True:
         print(f"Area: {area:.2f}")
         print("-------------------------")
 
-    elif nL >= 5:
+    elif nL > 4:
         L = float(input("Ingresa la medida de los lados de cada figura: "))
         perim = perimetro(L, nL)
         print("-------------------------")
