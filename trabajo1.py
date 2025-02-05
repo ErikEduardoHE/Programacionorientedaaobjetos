@@ -2,12 +2,12 @@ import math
 
 class Figura:
     
-    def cuadrado(self, L):
-        return L * L
+    #def cuadrado(self, L):
+    #    return L * L
                     
-    def triangulo(self, L):
-        altura = (math.sqrt(3) / 2) * L
-        return (L * altura) / 2
+    #def triangulo(self, L):
+    #    altura = (math.sqrt(3) / 2) * L
+    #    return (L * altura) / 2
             
     def figurasregulares(self, L, nL):
         angulo_radianes = (math.pi / nL)
