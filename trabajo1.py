@@ -1,18 +1,18 @@
 import math
-
-def cuadrado(L):
-    return L * L
+class figura:
+    def cuadrado(L):
+        return L * L
                     
-def triangulo(L):
-    altura = (math.sqrt(3) / 2) * L
-    return (L * altura) / 2
-        
-def figurasregulares(L):
-    angulo_radianes = (math.pi / nL)
-    return nL * L**2 / 4 * math.tan(angulo_radianes)
+    def triangulo(L):
+        altura = (math.sqrt(3) / 2) * L
+        return (L * altura) / 2
+            
+    def figurasregulares(L):
+        angulo_radianes = (math.pi / nL)
+        return nL * L**2 / 4 * math.tan(angulo_radianes)
 
-def perimetro(L, nL):
-    return L * nL
+    def perimetro(L, nL):
+        return L * nL
 
 while True:
     nL = int(input("Ingresa el numero de lados de la figura: "))
