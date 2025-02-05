@@ -38,6 +38,6 @@ while True:
         print("-------------------------")
         
     else:
-        print("-------------------------")
-        print("Aún no puedo calcular esa figura.")
-        print("-------------------------")
+        print("-----------------------------")
+        print("Ingresa los datos de una figura valida.")
+        print("-----------------------------")
