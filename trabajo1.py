@@ -40,4 +40,4 @@ while True:
     else:
         print("-----------------------------")
         print("Ingresa los datos de una figura valida.")
-        print("-----------------------------")
+        print("-----------------------------")-
