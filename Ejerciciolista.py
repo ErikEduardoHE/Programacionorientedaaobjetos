@@ -31,8 +31,6 @@ class ListaManager:
     def imprimir_lista(self):
         print(f"Lista actual: {self.lista}")
 
-
-
 lista_manager = ListaManager()
 
 while True:
