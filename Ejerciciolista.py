@@ -3,9 +3,9 @@ class ListaManager:
         self.lista = [] 
 
     def insertar_en_lista(self, objingresado):
-        print("Que tipo de elemento es: ")
-        print("1.- Numero enetero")
-        print("2.- Numero decimal")
+        print("¿Qué tipo de elemento es?")
+        print("1.- Número entero")
+        print("2.- Número decimal")
         print("3.- Cadena de texto")
         tipovalor = input(">>>>>> ")
         if tipovalor == "1":
@@ -15,7 +15,7 @@ class ListaManager:
         elif tipovalor == "3":
             objingresado = str(objingresado)
         else:
-            print("Elige un tipo de valor valido")
+            print("Elige un tipo de valor válido")
         
         self.lista.append(objingresado)
         print(f"{objingresado} agregado a la lista")
@@ -28,7 +28,7 @@ class ListaManager:
             print(f"{objremovido} no se encuentra en la lista")
 
     def modificar_un_elemento(self, eliminado, nuevoindice):
-        if eliminado < len(self.lista):
+        if eliminado < len(self.lista) and nuevoindice < len(self.lista):
             valor = self.lista.pop(eliminado)  
             self.lista.insert(nuevoindice, valor) 
             print(f"Se modificó el elemento {valor} en la lista")
@@ -45,21 +45,27 @@ class ListaManager:
     def imprimir_lista(self):
         print(f"Lista actual: {self.lista}")
 
-    def modificar_tipo_elemento(self, tipodato):
-        print("A que tipo de elemento quieres convertirlo: ")
-        print("1.- Numero enetero")
-        print("2.- Numero decimal")
-        print("3.- Cadena de texto")
-        tipovalor = input(">>>>>> ")
-        if tipovalor == "1":
-            tipodato = int(tipodato)
-        elif tipovalor == "2":
-            tipodato = float(tipodato)
-        elif tipovalor == "3":
-            tipodato = str(tipodato)
+    def modificar_tipo_elemento(self, indice):
+        if indice < len(self.lista):
+            tipodato = self.lista[indice]
+            print("¿A qué tipo de elemento quieres convertirlo?")
+            print("1.- Número entero")
+            print("2.- Número decimal")
+            print("3.- Cadena de texto")
+            tipovalor = input(">>>>>> ")
+            if tipovalor == "1":
+                tipodato[indice] = int(tipodato)
+            elif tipovalor == "2":
+                tipodato.lista[indice] = float(tipodato)
+            elif tipodato == "3":
+                self.lista[indice] = str(tipodato)
+            else:
+                print("Elige un tipo de valor válido")
+            print(f"Elemento en índice {indice} modificado a {self.lista[indice]}")
         else:
-            print("Elige un tipo de valor valido")
+            print("Índice no válido")
 
+# Creación de la instancia de ListaManager
 lista_manager = ListaManager()
 
 while True:
@@ -93,9 +99,7 @@ while True:
         try:
             eliminado = int(input("¿Qué elemento quieres mover? (escribe su índice): "))
             nuevoindice = int(input("¿En qué índice quieres colocarlo?: "))
-            eliminar_elemento = eliminado - 1
-            nuevo_indice = nuevoindice - 1
-            lista_manager.modificar_un_elemento(eliminar_elemento, nuevo_indice)
+            lista_manager.modificar_un_elemento(eliminado, nuevoindice)
         except ValueError:
             print("Por favor ingresa un número válido.")
         print("-----------------------------------")
@@ -105,14 +109,21 @@ while True:
         lista_manager.imprimir_lista()
         try:
             indice = int(input("Escribe el índice del objeto que quieres eliminar: "))
-            indice = indice - 1
             lista_manager.eliminar_elemento_por_indice(indice)
         except ValueError:
             print("Por favor ingresa un número válido.")
         print("-----------------------------------")
+
     elif opcion == "5":
-        tipodato = int(input("Escribe el indice del elemento a modificar: "))
-        tipodato = tipodato - 1
+        print("-----------------------------------")
+        lista_manager.imprimir_lista()
+        try:
+            indice = int(input("Escribe el índice del elemento a modificar: "))
+            indice = indice - 1
+            lista_manager.modificar_tipo_elemento(indice)
+        except ValueError:
+            print("Por favor ingresa un número válido.")
+        print("-----------------------------------")
 
     elif opcion == "6":
         print("-----------------------------------")
