@@ -1,3 +1,4 @@
+#Abstracción
 #Crea una clase abstracta Figura con un método abstracto calcular_area(), y luego implementa clases 
 # derivadas como Circulo y Rectangulo que calculen su área correspondiente.
 
@@ -34,6 +35,7 @@ print(f"Área del círculo: {circulo.calcular_area():.2f}")
 print(f"Área del rectángulo: {rectangulo.calcular_area()}")
 
 
+#Encapsulamiento 
 #Crea una clase CuentaBancaria que tenga atributos privados para el saldo y un método para depositar y retirar dinero, 
 # asegurando que el saldo no pueda ser modificado directamente.
 
@@ -64,6 +66,7 @@ cuenta.depositar(500)
 cuenta.retirar(300)
 print(f"Saldo final: {cuenta.obtener_saldo()}")
 
+#Herencia 
 #Crea una clase Vehiculo con atributos básicos y dos clases Coche y Moto que hereden de Vehiculo.
 
 class Vehiculo:
@@ -97,6 +100,7 @@ moto = Moto("Honda", "CBR", "deportiva")
 print(coche.mostrar_info())
 print(moto.mostrar_info())
 
+#Polimorfismo 
 #Crea una función que reciba diferentes tipos de Figura y calcule sus áreas sin importar su tipo.
 
 def mostrar_area(figura):
