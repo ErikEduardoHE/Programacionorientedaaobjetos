@@ -32,6 +32,16 @@ conjunto_mixto = set(lista_mixta)
 conjunto_numpy = set(lista_numpy)
 
 diccionario = {
-    "Nombre": ,
-    "Edad": 10
+    "Especie": "Perro",
+    "Edad": 10,
+    "Ladra": True
 }
+
+print(lista_mixta)
+print(lista_mixta)
+print(tupla_mixta)
+print(tupla_mixta)
+print(tupla_numpy)
+print(conjunto_mixto)
+print(conjunto_numpy)
+print(diccionario)
