@@ -46,3 +46,10 @@ print(tupla_numpy)
 print(conjunto_mixto)
 print(conjunto_numpy)
 print(diccionario)
+
+lista2 = [1, 1.1, True, "String"]
+lista2.append(1, "Hola")
+lista2.extend([2, "Hola2"])
+lista2.index(1)
+lista2.count(1)
+x = 1 in lista2
