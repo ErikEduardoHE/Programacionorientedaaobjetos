@@ -19,7 +19,7 @@ tupla = tuple()
 import numpy as np
 from numpy import array
 
-lista_mixta = ["Hola mundo", 3.1416 , 1, True, False]
+lista_mixta = ["Hola mundo", 3.1416 , 1, True, False, 1]
 
 lista_numpy = np.array([1, 2, 3, 4, 5])
 
@@ -40,8 +40,7 @@ diccionario = {
 }
 
 print(lista_mixta)
-print(lista_mixta)
-print(tupla_mixta)
+print(lista_numpy)
 print(tupla_mixta)
 print(tupla_numpy)
 print(conjunto_mixto)
