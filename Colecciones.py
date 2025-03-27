@@ -48,8 +48,12 @@ print(conjunto_numpy)
 print(diccionario)
 
 lista2 = [1, 1.1, True, "String"]
-lista2.append(1, "Hola")
+lista2.append("Hola")
+print(lista2)
 lista2.extend([2, "Hola2"])
+print(lista2)
 lista2.index(1)
+print(lista2)
 lista2.count(1)
+print(lista2)
 x = 1 in lista2
