@@ -19,7 +19,7 @@ tupla = tuple()
 import numpy as np
 from numpy import array
 
-lista_mixta = ["Hola mundo", 3.1416 , 1, True, False, 1]
+lista_mixta = ["Hola mundo", 3.1416 , 1, True, False]
 
 lista_numpy = np.array([1, 2, 3, 4, 5])
 
