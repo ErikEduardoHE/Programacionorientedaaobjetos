@@ -52,7 +52,7 @@ tipos = [tipo["type"]["name"] for tipo in pokemon_info.get("types", [])]
 movimientos = [move["move"]["name"]for move in pokemon_info.get("moves", [])]
 
 print(f"Nombre del pokemon: {pokemon_info.get('name')}")
-print(f"Altura: {pokemon_info.get('height')}cm")
+print(f"Altura: {pokemon_info.get('height')}m")
 print(f"Peso: {pokemon_info.get('weight')} g")
 print(f"Id en la pokedex: {pokemon_info.get('id')}")
 print(f"Tipo: {', '.join(tipos)}")
