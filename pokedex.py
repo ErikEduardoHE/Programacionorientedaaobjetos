@@ -50,7 +50,6 @@ pokemon_info = gJson.leer_json()
 #print(pokemon_info)
 tipos = [tipo["type"]["name"] for tipo in pokemon_info.get("types", [])]
 movimientos = [move["move"]["name"]for move in pokemon_info.get("moves", [])]
-
 print(f"Nombre del pokemon: {pokemon_info.get('name')}")
 print(f"Altura: {pokemon_info.get('height')}m")
 print(f"Peso: {pokemon_info.get('weight')} g")
