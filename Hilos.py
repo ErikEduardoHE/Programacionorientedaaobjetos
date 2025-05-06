@@ -16,3 +16,7 @@ class hilo(threading.Thread):
 
 hilo1 = hilo("hilo", 2)
 hilo2 = hilo("hilo2", 4)
+hilo1.start()
+hilo2.start()
+hilo1.join()
+hilo2.join()
