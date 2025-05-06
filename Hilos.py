@@ -13,3 +13,6 @@ class hilo(threading.Thread):
             print(F"El hilo {self.nombre} se encuentra en iteracion {i}")
             sleep(self.intervalo)
         print(f"El hilo {self.nombre} ha finalizado")
+
+hilo = hilo("hilo", 2)
+hilo2 = hilo("hilo2", 4)
