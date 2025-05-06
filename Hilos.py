@@ -1,17 +1,18 @@
 import threading
 from time import sleep
 
+
 class hilo(threading.Thread):
     def __init__(self, nombre, intervalo):
         super().__init__()
         self.nombre = nombre
         self.intervalo = intervalo
 
-    async def run(self):
+    def run(self):
         print(f"El hilo {self.nombre} ha comenzado")
         for i in range(5):
             print(F"El hilo {self.nombre} se encuentra en iteracion {i}")
-            await sleep(self.intervalo)
+            sleep(self.intervalo)
         print(f"El hilo {self.nombre} ha finalizado")
 
 hilo1 = hilo("hilo_1", 2)
