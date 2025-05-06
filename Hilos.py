@@ -14,5 +14,5 @@ class hilo(threading.Thread):
             sleep(self.intervalo)
         print(f"El hilo {self.nombre} ha finalizado")
 
-hilo = hilo("hilo", 2)
+hilo1 = hilo("hilo", 2)
 hilo2 = hilo("hilo2", 4)
