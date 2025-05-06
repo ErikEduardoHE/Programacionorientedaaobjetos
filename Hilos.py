@@ -7,11 +7,11 @@ class hilo(threading.Thread):
         self.nombre = nombre
         self.intervalo = intervalo
 
-    def run(self):
+    async def run(self):
         print(f"El hilo {self.nombre} ha comenzado")
         for i in range(5):
             print(F"El hilo {self.nombre} se encuentra en iteracion {i}")
-            sleep(self.intervalo)
+            await sleep(self.intervalo)
         print(f"El hilo {self.nombre} ha finalizado")
 
 hilo1 = hilo("hilo_1", 2)
