@@ -4,7 +4,7 @@ Repositorio para Programación orientada a objetos
 ## Índice de Prácticas
 
 1. [Práctica 2 - Figuras con parámetros](https://github.com/ErikEduardoHE/Programacionorientedaaobjetos/blob/main/Practica2(Figuras_con_parametros)/Figuras_con_parametros.py)
-2. [Práctica 4 - Encapsulamiento](https://github.com/ErikEduardoHE/Programacionorientedaaobjetos/blob/main/Practica3(Figuras_unificando_el_calculo_de_area_de_poligono)/Figuras.py)
+2. [Práctica 3 - Figuras unificando el calculo de area de poligono](https://github.com/ErikEduardoHE/Programacionorientedaaobjetos/blob/main/Practica3(Figuras_unificando_el_calculo_de_area_de_poligono)/Figuras.py)
 3. [Práctica 4 - Encapsulamiento](https://github.com/ErikEduardoHE/Programacionorientedaaobjetos/blob/main/Practica4(Encapsulamiento)/Encapsulamiento.py)
 4. [Práctica 5 - Numpy](https://github.com/ErikEduardoHE/Programacionorientedaaobjetos/tree/main/Practica5(Numpy))
 5. [Práctica 6 - Abstracción](https://github.com/ErikEduardoHE/Programacionorientedaaobjetos/blob/main/Practica6(Abstraccion)/Abstraccion.py)
